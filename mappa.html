@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mappa con marcatore</title>
+  <script src="https://developers.google.com/maps/get-started"></script>
+</head>
+<body>
+  <div id="mappa" style="height: 400px; width: 600px;"></div>
+  
+  <script>
+    // Inizializza la mappa e posizionala su Montebelluna
+    var mappa = new google.maps.Map(document.getElementById('mappa'), {
+      zoom: 14,
+      center: {lat: 45.604169, lng: 11.884550}
+    });
+    
+    // Crea un marcatore e posizionalo sul Municipio di Montebelluna
+    var marcatore = new google.maps.Marker({
+      position: {lat: 45.604169, lng: 11.884550},
+      map: mappa,
+      title: 'Municipio di Montebelluna'
+    });
+  </script>
+</body>
+</html>
