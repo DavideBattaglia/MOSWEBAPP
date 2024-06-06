@@ -5790,4 +5790,16 @@ label {
   .footer-text i {
     color: #da0700; }
 
+
+    .pulsante-fisso {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+     /* width: 100px;
+      height: 100px;*/
+      z-index: 100;
+      background-color: transparent;
+      border: none;
+    }
+
 /*# sourceMappingURL=main.css.map */
